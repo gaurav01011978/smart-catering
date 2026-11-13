@@ -1,0 +1,9 @@
+package com.smartcatering.repository;
+
+import com.smartcatering.entity.MenuItem;
+import org.springframework.data.jpa.repository.JpaRepository;
+import java.util.List;
+
+public interface MenuItemRepository extends JpaRepository<MenuItem, Long> {
+    List<MenuItem> findByOwnerId(Long ownerId);
+}

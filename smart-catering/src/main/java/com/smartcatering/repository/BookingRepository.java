@@ -1,0 +1,9 @@
+package com.smartcatering.repository;
+
+import com.smartcatering.entity.Booking;
+import org.springframework.data.jpa.repository.JpaRepository;
+import java.util.List;
+
+public interface BookingRepository extends JpaRepository<Booking, Long> {
+    List<Booking> findByCustomerIdOrderByEventDateDesc(Long customerId);
+}

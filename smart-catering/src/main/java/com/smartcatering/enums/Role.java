@@ -1,0 +1,6 @@
+package com.smartcatering.enums;
+
+public enum Role {
+    CUSTOMER, CATERER, STALL_OWNER, BAR_OWNER, CROCKERY_OWNER,
+    TANDOOR_OWNER, CHINESE_OWNER, CHAPATI_OWNER, THEKEDAR
+}
